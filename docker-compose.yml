@@ -7,7 +7,6 @@ services:
       - 8080:8080
     depends_on:
       - maria_db
-    command: sh -c './wait-for mysql_db:3306 -- npm start'
   maria_db:
     image: "mariadb:10.5.8"
     restart: always
