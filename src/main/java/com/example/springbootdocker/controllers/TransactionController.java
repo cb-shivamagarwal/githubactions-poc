@@ -20,7 +20,7 @@ public class TransactionController {
         return transaction.getTransactionId();
     }
 
-    @GetMapping("/viewAll")
+    @GetMapping("/viewall")
     public Iterable<Transaction> viewAllTransactions() {
         return transactionService.getTransactionHistory();
     }
