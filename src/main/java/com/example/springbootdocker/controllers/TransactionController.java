@@ -3,7 +3,9 @@ package com.example.springbootdocker.controllers;
 import com.example.springbootdocker.exceptions.InvalidTransactionReferenceException;
 import com.example.springbootdocker.model.Transaction;
 import com.example.springbootdocker.service.TransactionService;
+
 import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -29,7 +31,7 @@ public class TransactionController {
   @GetMapping("/viewall")
   public Iterable<Transaction> viewAllTransactions() {
     return transactionService.getTransactionHistory();
-     }
+  }
 
   /**
    * This is Summary.
