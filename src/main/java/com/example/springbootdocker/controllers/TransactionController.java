@@ -29,7 +29,7 @@ public class TransactionController {
   @GetMapping("/viewall")
   public Iterable<Transaction> viewAllTransactions() {
     return transactionService.getTransactionHistory();
-  }
+     }
 
   /**
    * This is Summary.
