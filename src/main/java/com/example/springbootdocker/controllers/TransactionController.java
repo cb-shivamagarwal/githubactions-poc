@@ -32,7 +32,7 @@ public class TransactionController {
   }
 
   /**
-   * {@summary <p>This is Summary.</p>}
+   * This is Summary.
    *
    * @param id - transaction id
    */
