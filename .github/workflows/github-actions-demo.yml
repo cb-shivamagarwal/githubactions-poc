@@ -16,6 +16,7 @@ jobs:
           tool_name: 'testtool'
           level: error
           fail_on_error: true
+          filter_mode: nofilter
 
   build:
     runs-on: ubuntu-latest
